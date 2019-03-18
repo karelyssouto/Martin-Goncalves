@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Anaheim|Antic+Didone|Carrois+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400i|Raleway+Dots|Roboto:100" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+            <h1><a href="../homePage.html">MARTIN GONCALVES</a></h1>
+    </header>
+
+    <div class="homeContainer">
+        <div id="navBar">
+                <div class="displaySideBar" onclick="toggleNavBar()">
+                    <!-- to design the three nav "buttons" / create a span tag-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- using a list to create a nav bar -->
+                <ul>
+                    <li id="home"><a href="../homePage.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/behindTheLense.html">Behind the Lense</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>            
+                </ul>
+            
+        <div class="socialMedia">
+                <a href="https://www.facebook.com/martingoncalvesg1"><img id="facebook" alt="Click to follow on facebook" src="../images/LOGOS/facebook.png"></a>
+                <a href="https://www.instagram.com/martingoncalvesg/"><img id="instagram" alt="Click to follow on instagram" src="../images/LOGOS/instagram.png"></a>
+                <a href="https://www.youtube.com/channel/UCExYLfe2O7xOGHYvDTSBRnw"><img id="youtube"alt="Click to follow on youtube" src="../images/LOGOS/youtube.png"></a>
+
+        </div>
+        </div>
+        <h3 id="gallery">Gallery</h3>
+        
+<div class="mainGalleryContainer">
+        <a href="../pages/gallery2.html">
+                <article title="portraits">
+                        <img id="portraitsCover"src="../images/PORTRAITS/PortraitCover.jpg" alt="girl posing with a coke">
+                        <p>PORTRAITS</p>
+                </article>
+            </a>
+            
+            <a href="../pages/gallery3.html" >
+                <article id="exploringCaracas" title="exploringCaracas">
+                    
+                        <img id="ccsCover"src="../images/EXPLORING-CCS/ExploringCover.jpg" alt="picture of Caracas">
+                        <p>EXPLORING CARACAS</p>
+                </article>
+            </a>
+        </div>
+ 
+        <section class="Section">
+                <div class="shootWithMeSectionContainer">
+                    <h5> Interested in how Martin edits his pictures?</h5>
+                    <p id="h5p">Check out this video with his top tricks and tips for editing!</p>
+                    <div id="shootWithMe" class="aboutSections"> 
+                        <a id="galleryText"href="../pages/howIEdit.html"> How I Edit</a>
+                    </div>
+                </div>
+            </section>
+
+            <script src="../app.js"></script>
+</body>
+</html>

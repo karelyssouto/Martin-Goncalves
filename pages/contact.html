@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Martin </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Anaheim|Antic+Didone|Carrois+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400i|Raleway+Dots|Roboto:100" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <header>
+         <h1><a href="../homePage.html">MARTIN GONCALVES</a></h1>
+    </header>
+
+    <div class="homeContainer">
+        <div id="navBar">
+                <div class="displaySideBar" onclick="toggleNavBar()">
+                    <!-- to design the three nav "buttons" / create a span tag-->
+                    <span id="burger"></span>
+                    <span id="burger"></span>
+                    <span id="burger"></span>
+                </div>
+                <!-- using a list to create a nav bar -->
+                <ul>
+                    <li id="home"><a href="../homePage.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/behindTheLense.html">Behind the Lense</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>            
+                </ul>
+            
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/martingoncalvesg1"><img id="facebook" alt="Click to follow on facebook" src="../images/LOGOS/facebook.png"></a>
+            <a href="https://www.instagram.com/martingoncalvesg/"><img id="instagram" alt="Click to follow on instagram" src="../images/LOGOS/instagram.png"></a>
+            <a href="https://www.youtube.com/channel/UCExYLfe2O7xOGHYvDTSBRnw"><img id="youtube"alt="Click to follow on youtube" src="../images/LOGOS/youtube.png"></a>
+
+        </div>
+    </div>
+    
+ <div class="backgroundOverlay"></div>
+
+
+<div id="contactContainer">
+ <h4>Contact</h4>
+ <div class="info">
+     <span class="contactInfo" id="phone2">58.414.123.4567</span>
+     <span class="contactInfo" id="email">info@martingoncalvesgphotography.com</span>
+     <span class="contactInfo" id="address1">123 Vollmer Av.</span>
+     <span class="contactInfo" id="address2">APT 15E.</span>
+     <span class="contactInfo" id="city">Caracas, Venezuela.</span>
+     <span class="contactInfo" id="zipCode">1010.</span>
+ </div>
+ <div class="contactMartin">
+<form name="contactForm" onsubmit="return validateContactForm()">
+    <label>
+        Your name
+        <input type="text" class="yourName" name="yourName">
+         Your e-mail
+        <input type="text" class="yourEmail" name="yourEmail">
+        Leave your message here 
+        <input type="text" class="yourMessage" name="yourMessage">
+    </label>
+     <button id="contactSubmit" type="submit" value="submit" method="post" >
+        Submit 
+    </button> 
+
+    <div id="contactModalContainer" >
+
+            <div id="contactModal"> Thank you for your message, I'll be in touch soon. </div>
+            <a href="#contactForm" title="close" class="close" onclick="closeModal()">X</a>
+            
+        </div>
+
+</form>
+
+</div> 
+</div>
+
+            <script src="../app.js"></script>
+</body>
+</html>

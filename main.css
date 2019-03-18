@@ -1,0 +1,842 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* take out the blue border of every button */
+button{
+    outline: none;
+}
+input{
+    outline: none;
+}
+/* styling the header */
+header{
+    height: 9vh;
+    width: 100%;
+    position: fixed;
+    color: #25262A;
+    text-align: left;
+    background:  rgb(255, 255, 255);
+    z-index: 3;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@keyframes text-focus-in {
+    0% {
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+h1{
+    font-family: 'Raleway Dots', cursive;
+    text-shadow: 2px 3px 5px rgba(37, 38, 42, 0.753);
+    color: #25262A;
+    font-size: 2.5em;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+h1 a{
+    color: #25262A;
+}
+/* styling the nav bar */
+#navBar{
+    position: fixed;
+    width: 270px;
+    height: 100%;
+    background: #25262A;
+    right: -270px;
+    font-family: 'Roboto', sans-serif;
+    transition: all.3s linear;
+    z-index:3;
+}
+/* this will display the navBar when is active */
+#navBar.active{
+    right: 0px;
+}
+#navBar ul li {
+    color: rgb(255, 255, 255);
+    background: #25262A;
+    font-size: 1.2em;
+    list-style: none;
+    padding: 25px 15px;
+    border-bottom: 1px solid rgba(110, 110, 110, 0.911);
+    margin-left: 2%;
+    
+}
+#navBar ul li:hover{
+
+    border-left: solid #F72A47;
+}
+/* creating the three slashes that will be clicked to display the nav bar  */
+#navBar .displaySideBar {
+    position: absolute;
+    right: 325px;
+    top: 20px;
+}
+#navBar .displaySideBar span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #F72A47;
+    box-shadow: 2px 3px 5px rgba(37, 38, 42, 0.199);
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+#navBar .displaySideBar:hover{
+    opacity: 0.8;
+    
+}
+#navBar .displaySideBar:hover{
+    opacity: 0.4;
+    
+}
+a{
+    color: white;
+}
+
+
+/* ================================= */
+/* ADD ANIMATIONS FOR WHEN EACH PAGE IS CLICKED */
+
+
+/* =================================== */
+/* style the footer */
+.socialMedia{
+    height: 3vh;
+    background: #25262A;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    padding: 50px;
+   
+}
+#facebook:hover{
+    opacity: 0.6;
+}
+#instagram:hover{
+    opacity: 0.6;
+}
+#youtube:hover{
+    opacity: 0.6;
+}
+/* ============================================ */
+/* ============================================ */
+
+/* HOME PAGE */
+.home1{
+    width: 100vw;
+    height: 100vh;
+    /* border: solid; */
+    display: flex;
+
+}
+/* .pagetitle{
+    border:solid;
+} */
+h2{
+    animation: scale-in-ver-bottom 1.5s cubic-bezier(0, 0.460, 0.450, 0.940) both;
+}
+@keyframes scale-in-ver-bottom {
+    0% {
+        transform: scaleY(0);
+        transform-origin: 0% 100%;
+      opacity: 1;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: 0% 100%;
+      opacity: 1;
+    }
+  }
+  
+.homepagePhoto{
+height: 100vh;
+width: 45vw;
+/* border: solid; */
+position: absolute;
+overflow: hidden;
+}
+
+#martin{
+    position: relative;
+    /* display: flex; */
+    top:50%;
+    left: 100%;
+    font-family: 'Raleway Dots', cursive;
+    text-shadow: 2px 3px 5px rgba(37, 38, 42, 0.753);
+    font-size: 4em;
+}
+#photography{
+    position: relative;
+    /* display: flex; */
+    top:65%;
+    left: 100%;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 3px 5px rgba(37, 38, 42, 0.555);
+    font-size: 2.5em;
+    color: #F72A47;
+}
+.homeSections{
+    width: 100vw;
+    height: 100vh;
+    color: #25262A;
+    animation: slide-in-left 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    /* border: solid; */
+}
+#goToAbout{
+    background: #F72A47;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5%;
+}
+#aboutText{
+    color: #25262A;
+    background: white;    
+}
+#homeButton{
+    color: #25262A;
+    background: white;   
+}
+#bts{
+    background: #25262A;
+    color:white;
+}
+#goToBTL{
+    background: white;
+    color: #F72A47;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5%;
+}
+#homeButton3{
+    background: #25262A;
+    color:white;
+}
+
+/* =========================================================== */
+/* =========================================================== */
+
+/* ABOUT PAGE */
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+h3{
+    position: relative;
+    top: 250px;
+    left: 12%;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 2px 2px rgba(37, 38, 42, 0.582);
+    font-size: 3em;
+    color: #25262A;
+    z-index: 2;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.bioContainer{
+    display: flex;
+    align-content: space-between;
+    z-index:2;
+}
+.martinPhotos{
+    width: 65vw;
+    height: 40vh;
+    overflow:hidden;
+    /* border: solid black; */
+    position: relative;
+    margin-top:20%;
+    left: 5%;
+    color: white;
+    z-index: 2;
+    animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    /* filter: blur(1rem); */
+}
+@keyframes slide-in-left {
+    0% {
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+#bioPhoto{
+    transition: transform 2s ease-in-out;
+    filter: blur(.5rem);    
+}
+#bioPhoto:hover{
+    transform: translate3d(0,-45.5vh, 0);
+    filter: blur(0);
+}
+.martinBio{
+    width: 35vw;
+    height: 80vh;
+    overflow:hidden;
+    /* border: solid black; */
+    position: relative;
+    margin-top:15%;
+    right: 18%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align: justify;
+    color: #25262A;
+    z-index:2;
+    animation: slide-in-fwd-center 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-in-fwd-center {
+    0% {
+    transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+    transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  .aboutSections {
+    display:block;
+    position: relative;
+    text-align:center;
+    padding-top: 2%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    background: #F72A47;
+    z-index:2;
+    width: 20vw;
+    height: 10vh;
+    top:0%;
+    left:40%;
+    box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.192);
+    }
+    .aboutSections:hover{
+        opacity: 0.8;
+    }
+    section{
+        padding-top: 25%;
+        /* border-bottom: solid #F72A47; */
+        /* padding-bottom: 10%; */
+        height: 100vh;
+        width: 100vw;
+        animation: swing-in-top-fwd 25s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    }
+    .Section{
+        background: #F72A47;
+        color:white;
+    }
+    #shootWithMe{
+        background: white;
+        color:#25262A;
+    }
+    .bookText{
+        background: white;
+        color:#25262A;
+    }
+    h5{
+        display:block;
+        position: relative;
+        text-align:center;
+        padding-bottom: 10%;
+        font-family: 'Lato', sans-serif;
+        font-size: 3em;
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+  @keyframes swing-in-top-fwd {
+    0% {
+              transform: rotateX(-100deg);
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+              transform: rotateX(0deg);
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+
+/* ============================================== */
+/* ============================================== */
+
+/* CONTACT PAGE  */
+#contactContainer{
+    height: 70vh;
+    width: 80vw;
+    background: #25262A;
+    top: 20%;
+    left: 10%;
+    position: absolute;
+    z-index:2;  
+    box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.24);
+}
+h4{
+    position: relative;
+    top: 5%;
+    left: 12%;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 3px 5px rgba(255, 255, 255, 0.582);
+    font-size: 3em;
+    color:white;
+    z-index: 2;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* after the form is created, add styling */
+.contactMartin{
+    /* border: solid; */
+    width: 40vw;
+    height: 50vh;
+    left: 50%;
+    /* margin-top:20%; */
+    /* background: rgb(255, 255, 255); */
+}
+form{
+    display: flex;
+    justify-content: justify;
+    flex-wrap: wrap;
+    
+}
+.contactMartin, input{
+    position: relative;
+    display:block;
+    z-index: 2; 
+}
+label{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.5em;
+    padding-top:8%;
+    margin: 5% 25% 0% 25%;
+    color: white;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+input{
+    background: white;
+    border:none;
+    color:#F72A47;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    height: 5vh;
+    width: 20vw;
+    box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.589);
+}
+
+.yourMessage{
+    height: 15vh;
+    width: 20vw;
+    text-align: justify;
+    display: block;
+}
+#contactSubmit{
+    height:5vh;
+    width: 8vw;
+    background: #F72A47;
+    border: #F72A47;
+    box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.589);
+    margin: 2% 40% 0% 40%;
+    /* justify-content: center; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: white;
+}
+#contactSubmit:hover{
+    background: rgb(232, 232, 233);
+    border:none;
+    color:#25262A;
+}
+/* styling the info section of the contact page */
+.contactInfo { 
+    display:flex;
+    flex-direction: column;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.info {
+    position: absolute;
+    padding-left: 12%;
+    padding-top:7%;
+    /* animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both; */
+
+}
+#phone2{
+    border-top: solid #F72A47;
+    padding-top:5%;
+    
+}
+#zipCode{
+    border-bottom:solid #F72A47;
+    padding-bottom: 5%;
+}
+
+#contactModalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 3; 
+    left: 0;
+    top: 12%;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+    background-color: rgba(37, 38, 42, 0.575);
+    text-align: center;
+    justify-content: center;
+}
+
+#contactModal{
+    position: fixed;
+    top:40%;
+    bottom:50%;
+    left:30%;
+    background: white;
+    width:40vw;
+    height:20vh;
+    z-index:  4;
+    pointer-events: none;
+    padding-top:3%;
+    font-family: 'Anaheim', sans-serif;
+    font-size: 2em;
+}
+
+.close{
+    position: relative;
+    top:28%;
+    left:19.5%;
+    z-index:  4;
+    height: 4.5vh;
+    background: #F72A47;
+    text-align:center;
+    font-family: 'Anaheim', sans-serif;
+    font-size: 2em;
+    color:white;
+}
+
+
+
+/* =================================== */
+/* =================================== */
+
+
+/* HOW I EDIT PAGE */
+
+.howIEditContainer{
+    display: block;
+    left: 40%;
+    top: 20%;
+    
+}
+.videoShootAndEdit{
+    width: 45vw;
+    height: 50vh;
+    position: fixed;
+    display: block;
+    left: 25%;
+    top: 30%;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    
+}
+.subscribe{
+    display: block;
+    position: absolute;
+    margin-top: 45%;
+    left: 40%;
+    animation: scale-in-ver-bottom 1.5s cubic-bezier(0, 0.460, 0.450, 0.940) both;
+}
+.subscribe:hover{
+    opacity: 0.6;
+}
+.edit{
+position: relative;
+top: 150px;
+left: 25%;
+font-family: 'Lato', sans-serif;
+font-size: 3em;
+color: #25262A;
+z-index: 2;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-left: 3%;
+    
+}
+#photoshop{
+    animation: scale-in-ver-bottom 1.5s cubic-bezier(0, 0.460, 0.450, 0.940) both;
+}
+#lightroom{
+    /* margin-left:1%; */
+    padding: .8%;
+    animation: scale-in-ver-bottom 1.5s cubic-bezier(0, 0.460, 0.450, 0.940) both;
+}
+#photoshop:hover{
+    background: #20C9FD;
+}
+#lightroom:hover{
+    background: #A7F7F7;
+}
+/* =================================== */
+/* =================================== */
+
+
+/* SHOOT WITH ME PAGE */
+
+/* Photo by */
+#cameraBackground{
+    position:fixed;
+    top:25%;
+    left: 25%;
+    width: 45vw;
+    height: 60vh;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+    /* z-index:2; */
+}
+.videoShoot{
+    position:fixed;
+    top:43%;
+    left: 25%;
+    width: 39vw;
+    height: 40vh;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+}
+.shootHeader{
+position: relative;
+top: 150px;
+left: 12%;
+font-family: 'Lato', sans-serif;
+font-size: 3em;
+color: #25262A;
+z-index: 2;
+animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+}
+.ks{
+    position:fixed;
+    top:48%;
+    left: 26.5%;
+    width: 32vw;
+    height: 35vh;
+    /* border:solid; */
+    border-radius: 25px 25px 25px 25px;  
+    overflow: hidden;
+    background: url("../videos/comeShootWithMe.mp4");
+   
+}
+/* =================================== */
+/* =================================== */
+
+/* BEHIND THE LENSE PAGE */
+
+.behind{
+    position: relative;
+    /* height: 100vh; */
+    top: 100px;
+    left: 30%;
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+    color: #25262A;
+    z-index: 2;
+    }
+    .igAside{
+        margin-top:22%;
+        margin-left:-10%;
+        height: 20vh;
+    }
+    .igAside:hover{
+        opacity: 0.8;
+    }
+    #ig{
+        margin-top:23%;
+        font-family: 'Roboto', sans-serif;
+        color: #F37D51;
+        font-size: 2em; 
+    }
+    #bts1{
+        position: relative;
+        height: 78.7vh;
+        width: 20.5vw;
+        margin-top: 5%;
+        right: 18%;
+        z-index:1; 
+    }
+    #phone{
+        position: relative;
+        border: transparent;
+        width: 30vw;
+        height:90vh;
+        /* height: 100vh; */
+        margin-top: 6%;
+        z-index:2;
+        left: 30%;
+    }
+    .btsSlidesContainer{
+        display: flex;
+        border: transparent;
+        position: relative;
+        justify-content: center;
+        margin-top: 3%;
+        /* position: absolute; */
+    }
+
+.arrow{
+    width: 2vw;
+    height:10vh;
+    border:none;
+    border-radius: 200px;
+    background: rgb(247, 42, 69);
+    box-shadow:3px 3px 3px gainsboro;
+    color: white;
+    margin-top: 25%;
+    display: block;
+    left: 5%;
+    position: relative;
+    z-index: 4;
+
+}
+.arrow:hover{
+    opacity: 0.6;
+}
+#previous{
+    left: 11%;
+}
+#next{
+    left:6%;
+}
+/* ============================================ */
+/* ============================================ */
+
+/* GALLERY MAIN PAGE */
+#gallery{
+    position: relative;
+    top: 110px;
+    left: 15%;
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+    color: #25262A;
+    z-index: 2;
+}
+#h5p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    /* margin-bottom: 15%; */
+}
+.mainGalleryContainer{
+    width: 80vw;
+    height: 100vh;
+    /* column-width: 220px;
+    column-count: 3;
+    column-gap: 20px; */
+    display: flex;
+    padding-top: 10%;
+    padding-left: 20%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    animation: flip-in-ver-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#exploringCaracas{
+    margin-left:15%;
+}
+#ccsCover{
+    width: 100%;
+    height: auto;
+    padding-top:6rem;
+    padding-bottom: 7rem;
+}
+#portraitsCover{
+    width: 100%;
+    height: auto;
+    margin-top:1rem;
+}
+@keyframes flip-in-ver-right {
+    0% {
+    transform: rotate3d(-1, 1, 0, -80deg);
+    opacity: 0;
+    }
+    100% {
+    transform: rotate3d(1, 1, 0, 0deg);
+      opacity: 1;
+    }
+  }
+ article[title]{
+    text-decoration: none;
+    padding: 1rem;
+    color:#424242;
+    box-shadow: 0 5px 5px  rgba(0,0,0, .12);
+    display: inline-block;
+    margin-bottom:20px;
+    transition: all .3s cubic-bezier(0.25, .8, .25, 1);
+    
+}
+
+/* when hovering over the container that holds the articles, if the title is not being hovered on, add opacity */
+.mainGalleryContainer:hover article[title]:not(:hover){
+    opacity: .6;
+}
+/* when the title is being hovered on, add box shadow */
+article[title]:hover{
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, .20);
+    
+}
+
+/* ============================================ */
+/* ============================================ */
+
+/* GALLERY 2 & 3*/ 
+
+    /* .galleryItem{
+      
+      width: 33.33%; 
+        width: 100%;
+        transition:all .8s;
+        display: flex;
+        flex-direction: column;
+          flex-wrap: wrap;
+          height: 100vw;
+      } */
+.galleryItem{
+    position:relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+   width: 95vw;
+   height: 30%;
+}
+#galleryText{
+    color: #25262A;
+}
+.galleryItem:hover article[title]:not(:hover){
+    opacity: .6;
+}
+
+article[title]:hover{
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, .20);
+    
+}
+
+  
